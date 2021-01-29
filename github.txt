@@ -1,0 +1,5 @@
+prefix_language_describe
+
+prefix   std_ - study
+         scr_ - screeps
+         old_ - old progect
