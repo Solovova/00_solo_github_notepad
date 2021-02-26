@@ -1,0 +1,2 @@
+C:\Users\vsolo\AppData\Roaming\syntevo\SmartGit\20.2\preferences.yml
+license file
