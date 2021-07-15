@@ -1,7 +1,7 @@
 http://www.gradle.org/downloads
 gradle -version
 gradle wrapper (в папці з майбутнім проектом)
-gradlew init
+./gradlew init
 
 новіверсії пакетів в версії ставити +
 
