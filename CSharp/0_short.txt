@@ -1,0 +1,41 @@
+1. Делегат
+    delegate int Operation(int x, int y);
+    delegate void Message(); //указатель на другие функции
+    Message mes; 
+    Message del2 = new Message(GoodMorning);
+    mes = GoodMorning;
+    
+    Message mes1 = Hello;
+    mes1 += HowAreYou;  // теперь mes1 указывает на два метода
+    mes1(); // вызываются оба метода - Hello и HowAreYou
+    //---------------------------------------------------------------------
+    Message mes = null;
+    mes?.Invoke();        // ошибки нет, делегат просто не вызывается
+    //---------------------------------------------------------------------
+    Message mes = null;
+    //mes();        // ! Ошибка: делегат равен null
+     //---------------------------------------------------------------------
+    Operation op = Add;
+    op -= Add;      // делегат op пуст
+    op(3, 4);       // !Ошибка: делегат равен null
+    
+    //---------------------------------------------------------------------
+    delegate T Operation<T, K>(K val);
+     
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Operation<decimal, int> op = Square;
+     
+            Console.WriteLine(op(5));
+            Console.Read();
+        }
+     
+        static decimal Square(int n)
+        {
+            return n * n;
+        }
+    }
+  
+  

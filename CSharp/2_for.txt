@@ -1,0 +1,29 @@
+2. Циклы 
+    2.1. for  break, continue
+        for (int i = 0; i < 9; i++)
+        {
+            Console.WriteLine($"Квадрат числа {i} равен {i*i}");
+        }
+    2.2. do (if true next) break, continue
+        int i = -1;
+        do
+        {
+            Console.WriteLine(i);
+            i--;
+        }
+        while (i > 0);
+        
+    2.3. while (if true) break, continue
+        int i = 6;
+        while (i > 0)
+        {
+            Console.WriteLine(i);
+            i--;
+        }
+    
+    2.4. foreach
+        int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+        foreach (int i in numbers)
+        {
+            Console.WriteLine(i);
+        }

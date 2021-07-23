@@ -1,0 +1,31 @@
+4. Условные конструкции
+    4.1. if else
+        if(num1 > num2) {
+           Console.WriteLine($"Число {num1} больше числа {num2}");
+       } else if (num1 < num2) {
+           Console.WriteLine($"Число {num1} меньше числа {num2}");
+       } else {
+           Console.WriteLine("Число num1 равно числу num2");
+       }
+   
+   4.2. switch case
+       break, goto case, return или throw
+       switch (number)
+       {
+           case 1:
+               Console.WriteLine("case 1");
+               goto case 5; // переход к case 5
+           case 3:
+               Console.WriteLine("case 3");
+               break;
+           case 5:
+               Console.WriteLine("case 5");
+               break;
+           default:
+               Console.WriteLine("default");
+               break;
+       }
+   
+   4.1. ?
+                     true    false
+       int z = x==y? (x+y) : (x-y);

@@ -1,0 +1,47 @@
+5. Enum
+        Далее идет название перечисления, после которого указывается тип перечисления - он обязательно должен представлять целочисленный тип (byte, int, short, long). Если тип явным образом не указан, то по умолчанию используется тип int. Затем идет список элементов перечисления через запятую:
+        enum Days
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
+        
+        enum Time : byte
+        {
+            Morning,
+            Afternoon,
+            Evening,
+            Night
+        }
+        Первый по умолчанию - 0
+        enum Operation
+        { 
+            Add = 1,   // каждый следующий элемент по умолчанию увеличивается на единицу
+            Subtract, // этот элемент равен 2
+            Multiply, // равен 3
+            Divide    // равен 4
+        }
+        
+        enum Operation
+        { 
+            Add = 2,
+            Subtract = 4,
+            Multiply = 8,
+            Divide = 16
+        }
+        
+        enum Color
+        {
+            White = 1,
+            Black = 2,
+            Green = 2,
+            Blue = White // Blue = 1
+        }
+        ????
+        Console.WriteLine((int)Color.White); // 1
+        Console.WriteLine(Color.White); // White
